@@ -1,19 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  @apply text-[1.2rem] 
+}
 .body{
-  @apply w-screen h-screen
+  @apply w-screen h-screen grid place-items-center
 }
 
+main{
+  @apply p-10 bg-[#dbdbdb] text-[#453947] w-[80%] h-[80%] flex justify-center items-center flex-col gap-20
+
+}
+/* bg-[#453947] */
 input{
-  @apply border-2 border-black rounded-lg
+  @apply border-[1px] border-black rounded-lg
 }
-
+.topW p{
+ @apply text-[#fff]
+}
 .topW{
-  @apply flex gap-8
+  @apply flex gap-8 justify-center items-center
 }
 select{
-  @apply border-2 border-black px-4 
+  @apply border-[1px] border-black px-4 
 }
 
+img{
+  @apply w-4
+}
+.resultW{
+  @apply flex items-center 
+}
+.ansW {
+  @apply text-white
+}
+.ansW p{
+  @apply opacity-[.7] text-[1.5rem] mb-8
+}
+select option{
+  @apply text-purple-900
+}
+
+button{
+  @apply bg-blue-600 mt-5 px-4 text-white rounded-lg
+}

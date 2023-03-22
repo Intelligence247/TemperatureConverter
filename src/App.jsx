@@ -21,21 +21,26 @@ console.log(selects)
   <p>Type</p>
   <select name=""
   onChange={(e)=> setSelects(e.target.value)}>
+     <option value="fahrenheit">
+      Fahrenheit
+    </option>
+
     <option value="celsius">
       Celsius
     </option>
-    <option value="fahrenheit">
-      Fahrenheit
-    </option>
+   
   </select>
   </div>
   <button
-  onClick={()=>setAns(selects==='celsius'?(((inputs*9)+160)/5) : selects === 'celsius'? (((inputs-32)*5)/9):(((inputs-32)*5)/9))}
+  onClick={()=>setAns(selects==='celsius'?(((inputs*9)+160)/5) : (((inputs-32)*5)/9))}
   >Convert</button>
   </div>
   <div className="ansW ">
     <p>Result</p>
-    <div className="final_ans">{inputs.length== 0?'':ans}</div>
+    <div className="resultW">
+    <div className="final_ans">{inputs.length === 0 ?'': ans }000</div>
+    <img src={ans.length===0? '' : selects === 'celsius' ? "/media/celsius.png" : "/media/fahrent2.png"}/>
+    </div>
   </div>
 </main>
 
