@@ -6,7 +6,6 @@ function App() {
   const [selects, setSelects] = useState(0)
   const [inputs, setInputs] = useState(0)
 console.log(selects)
-console.log(inputs.length)
   return (
     <div className="body">
 <main>
