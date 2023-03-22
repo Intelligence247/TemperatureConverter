@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+  @apply w-screen h-screen
+}
+
+input{
+  @apply border-2 border-black rounded-lg
+}
+
+.topW{
+  @apply flex gap-8
+}
+select{
+  @apply border-2 border-black px-4 
+}
+
