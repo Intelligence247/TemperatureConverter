@@ -14,10 +14,15 @@ main{
 }
 /* bg-[#453947] */
 input{
-  @apply border-[1px] border-black rounded-lg
+  @apply border-[1px] border-black rounded-lg outline-none pl-2
 }
+
+input::placeholder{
+  @apply pl-2
+}
+
 .topW p{
- @apply text-[#fff]
+ @apply text-[#615959]
 }
 .topW{
   @apply flex gap-8 justify-center items-center
@@ -25,18 +30,24 @@ input{
 select{
   @apply border-[1px] border-black px-4 
 }
+label{
+  @apply relative
+}
 
 img{
-  @apply w-4
+  @apply w-8
 }
 .resultW{
-  @apply flex items-center 
+  @apply flex items-center  h-6 w-max p-5 
+}
+.resultW div{
+  @apply text-[2rem]
 }
 .ansW {
-  @apply text-white
+  @apply text-black flex flex-col
 }
 .ansW p{
-  @apply opacity-[.7] text-[1.5rem] mb-8
+  @apply opacity-[.7] text-[1.5rem] mb-8 w-max m-auto
 }
 select option{
   @apply text-purple-900
@@ -44,4 +55,12 @@ select option{
 
 button{
   @apply bg-blue-600 mt-5 px-4 text-white rounded-lg
+}
+
+.invalid{
+  @apply text-red-300 text-[.8rem] h-max absolute flex w-max ml-4
+}
+
+.valid{
+  @apply hidden
 }
