@@ -15,7 +15,7 @@ Clone or download this repository and run with a local server of open `index.htm
 
 [Go Live](https://cute-meerkat-9c5153.netlify.app)
 
-![screenshot](/public/media/sketch3.png)
+![screenshot](/public/media/sketch.png)
 
 ## Contact
 
