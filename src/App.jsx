@@ -19,6 +19,7 @@ const handleclicks=()=>{
   return (
     <div className="body">
 <main>
+<h1>Temperature Converter</h1>
 <div className="topW">
 <label htmlFor="inputTemp">
   <p>Degrees</p>

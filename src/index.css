@@ -5,12 +5,19 @@
   @apply text-[1.2rem] 
 }
 .body{
-  @apply w-screen h-screen grid place-items-center
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.5), rgba(42, 42, 142, 0.8)), url(/media/R.jfif);
+
+  @apply w-screen h-screen grid place-items-center 
 }
 
 main{
-  @apply p-10 bg-[#dbdbdb] text-[#453947] w-[80%] h-[80%] flex justify-center items-center flex-col gap-20
+  /* background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(/media/R.jfif); */
 
+  @apply p-10 bg-[#fff] text-[#453947] w-[80%] h-[80%] flex justify-center items-center flex-col gap-0 bg-no-repeat bg-cover bg-center bg-opacity-[0.5] shadow-md shadow-blue-600
+
+}
+main h1{
+  @apply text-[indigo] text-[2.5rem] mb-10
 }
 /* bg-[#453947] */
 input{
@@ -22,7 +29,7 @@ input::placeholder{
 }
 
 .topW p{
- @apply text-[#615959]
+ @apply text-[#1e1d1d]
 }
 .topW{
   @apply flex gap-8 justify-center items-center
@@ -35,30 +42,30 @@ label{
 }
 
 img{
-  @apply w-8
+  @apply w-5
 }
 .resultW{
   @apply flex items-center  h-6 w-max p-5 
 }
 .resultW div{
-  @apply text-[2rem]
+  @apply text-[1.3rem]
 }
 .ansW {
   @apply text-black flex flex-col
 }
 .ansW p{
-  @apply opacity-[.7] text-[1.5rem] mb-8 w-max m-auto
+  @apply opacity-[.7] text-[2rem] mb-8 w-max m-auto mt-10
 }
 select option{
   @apply text-purple-900
 }
 
 button{
-  @apply bg-blue-600 mt-5 px-4 text-white rounded-lg
+  @apply bg-blue-600 mt-5 px-4 text-white rounded-lg  
 }
 
 .invalid{
-  @apply text-red-300 text-[.8rem] h-max absolute flex w-max ml-4
+  @apply text-red-400 text-[.8rem] h-max absolute flex w-max ml-4 animate-pulse 
 }
 
 .valid{
