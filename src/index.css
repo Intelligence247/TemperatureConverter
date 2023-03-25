@@ -35,7 +35,7 @@ input::placeholder{
   @apply flex gap-8 justify-center items-center
 }
 select{
-  @apply border-[1px] border-black px-4 
+  @apply border-[1px] border-black px-4 rounded-lg border-[blue]
 }
 label{
   @apply relative
@@ -70,4 +70,8 @@ button{
 
 .valid{
   @apply hidden
+}
+
+section p:last-child{
+  @apply text-[#ffc107] 
 }
