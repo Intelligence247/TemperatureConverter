@@ -3,11 +3,11 @@ import './App.css'
 
 function App() {
   const [ans, setAns] = useState('')
-  const [selects, setSelects] = useState(0)
-  const [selects2, setSelects2] = useState(0)
+  const [selects, setSelects] = useState('')
+  const [selects2, setSelects2] = useState('')
   const [inputs, setInputs] = useState('')
   const [img, setImg] = useState('')
-  // const [selectValid, setSelectValid] = useState()
+  const [selectValid, setSelectValid] = useState('')
 const handselects=(e)=>{
   setSelects(e.target.value)
   
@@ -21,9 +21,11 @@ const handleclicks=()=>{
 
   setImg(selects2 === 'fahrenheit' ? "/media/fahrent2.png" : selects2== "celsius"?"/media/celsius.png": selects2 ==="kelvin"?"/media/kelvin2.jfif":'')
 
-  // setSelectValid(selects==="default"?true:selects2==="default"?true:selects==='defaut'&& selects2==='default'?true:false)
+  setSelectValid(`${selects==='default'||selects2==='default'||selects===''||selects2===''?'You must select from both side':''}`)
   // console.log(selectValid)
+  // {`${selects==='default'||selects2==='default'||selects===''||selects2===''?'':'You must select from both side'}`}
 }
+console.log(selects, selects2)
   return (
     <div className="body">
 <main>
@@ -76,7 +78,7 @@ const handleclicks=()=>{
     Kelvin
    </option>
   </select>
-  {/* <p className={`selectvalid ${selectValid ===true? 'acth':'block'}`}>You must select from both side</p> */}
+  <p className='selectvalid'>{selectValid}</p>
   </section>
 
   </div>
