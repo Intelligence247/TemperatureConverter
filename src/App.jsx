@@ -19,7 +19,7 @@ const handleselects2=(e)=>{
 const handleclicks=()=>{
   setAns(`${selects==='celsius' && selects2=== 'fahrenheit'?(((inputs*9)+160)/5) : selects==='fahrenheit' && selects2==='celsius' ? (((inputs-32)*5)/9): selects === 'kelvin' && selects2==='fahrenheit'?((inputs-273)*1.8+32):selects === 'kelvin' && selects2 ==='celsius'?((inputs-273)):selects=== 'celsius' && selects2==='kelvin'?((parseInt(inputs)+273)):selects==='fahrenheit' && selects2==='kelvin'?((parseInt(inputs)+459.4)/1.8):selects==='default'||selects2==='default'?'':selects==="kelvin"&&selects2==="kelvin"?(inputs):selects==="celsius"&&selects2==="celsius"?(inputs):selects==="fahrenheit"&&selects2==="fahrenheit"?(inputs):''}`)
 
-  setImg(selects2 === 'fahrenheit' ? "/media/fahrent2.png" : selects2== "celsius"?"/media/celsius.png": selects2 ==="kelvin"?"/media/kelvin2.jfif":'')
+  setImg(selects2 === 'fahrenheit' ? "/media/fahrent2.png" : selects2== "celsius"?"/media/celsius.png": selects2 ==="kelvin"?"/media/kelvin2.jfif":selectValid.length>1?'':'')
 
   setSelectValid(`${selects==='default'||selects2==='default'||selects===''||selects2===''?'You must select from both side':''}`)
   // console.log(selectValid)
