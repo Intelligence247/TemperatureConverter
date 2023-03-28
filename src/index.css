@@ -73,12 +73,8 @@ button{
 }
 
 section p:last-child{
-  @apply  absolute left-[4rem] text-[#ffc107] 
+  @apply  absolute lg:text-base text-sm lg:left-[4rem] text-[#ffc107] w-max
 }
-
-/* .selectvalid{
-  @apply
-} */
 
 .acth{
   @apply hidden 
