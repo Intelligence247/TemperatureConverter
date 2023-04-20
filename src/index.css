@@ -5,15 +5,13 @@
   @apply text-[1.2rem] box-border p-0 m-0
 }
 .body{
-  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.5), rgba(42, 42, 142, 0.8)), url(/media/R.jfif);
+  background-image: linear-gradient(0deg, rgba(37, 40, 43, 0.8), rgba(34, 0, 255, 0.3)), url(./media/globe-2.jpg);;
 
-  @apply w-screen lg:h-screen h-auto grid place-content-center 
+  @apply w-screen lg:h-screen h-auto grid place-content-center bg-center bg-cover
 }
 :last-child
 main{
-  /* background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(/media/R.jfif); */
-
-  @apply p-10 bg-[#fff] text-[#453947] lg:w-[80vw] lg:h-[80vh] w-screen h-auto flex justify-center items-center flex-col gap-0 bg-no-repeat bg-cover bg-center bg-opacity-[0.5] shadow-md shadow-blue-600
+  @apply p-10 bg-[#fff] text-[#453947] lg:w-[80vw] lg:h-[80vh] w-screen h-auto flex justify-center items-center flex-col gap-0 bg-no-repeat bg-cover bg-center bg-opacity-[0.5] shadow-md shadow-blue-600 rounded-lg
 
 }
 main h1{
